@@ -25,7 +25,7 @@ struct StreakProvider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let sharedDefaults = UserDefaults(suiteName: "group.SparkApp")
+        let sharedDefaults = UserDefaults(suiteName: "group.projetoJotaPe.Spark")
         let currentStreak = sharedDefaults?.integer(forKey: "widgetContagemStreak") ?? 0
         
         let entry = StreakEntry(date: Date(), streakCount: currentStreak)

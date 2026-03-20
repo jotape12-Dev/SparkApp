@@ -24,7 +24,7 @@ struct TreinoDoDiaProvider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let sharedDefaults = UserDefaults(suiteName: "group.SparkApp")
+        let sharedDefaults = UserDefaults(suiteName: "group.projetoJotaPe.Spark")
         let nomeSalvo = sharedDefaults?.string(forKey: "widgetNomeTreinoDoDia") ?? "Descanso ou Livre"
         
         let entry = TreinoDoDiaEntry(date: Date(), nomeTreino: nomeSalvo)

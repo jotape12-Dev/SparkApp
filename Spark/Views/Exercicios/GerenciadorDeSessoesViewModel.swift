@@ -110,7 +110,7 @@ class GerenciadorSessoesViewModel: ObservableObject {
     }
     
     func atualizarTreinoDoDiaNoWidget(nomeDoTreino: String) {
-        if let sharedDefaults = UserDefaults(suiteName: "group.SparkApp") {
+        if let sharedDefaults = UserDefaults(suiteName: "group.projetoJotaPe.Spark") {
             sharedDefaults.set(nomeDoTreino, forKey: "widgetNomeTreinoDoDia")
             WidgetCenter.shared.reloadAllTimelines()
         }
@@ -420,7 +420,7 @@ class GerenciadorSessoesViewModel: ObservableObject {
         self.contagemStreakAtual = calcularSequenciaAtual()
         
         // Compartilha o número de dias seguidos atual com a extensão do Widget usando App Groups
-        if let sharedDefaults = UserDefaults(suiteName: "group.com.spark.app") {
+        if let sharedDefaults = UserDefaults(suiteName: "group.projetoJotaPe.Spark") {
             sharedDefaults.set(self.contagemStreakAtual, forKey: "widgetContagemStreak")
             WidgetCenter.shared.reloadAllTimelines()
         }
