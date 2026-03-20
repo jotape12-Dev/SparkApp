@@ -81,7 +81,6 @@ extension AITreinoDTO {
 class AIGeneratorService {
     static let shared = AIGeneratorService()
     
-    // A chave agora é lida do Config.xcconfig via Info.plist de forma segura
     private var apiKey: String {
         guard let key = Bundle.main.object(forInfoDictionaryKey: "GEMINI_API_KEY") as? String, !key.isEmpty else {
             return ""
