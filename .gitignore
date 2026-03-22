@@ -1,2 +1,9 @@
+# MacOS
 .DS_Store
-*.xcuserstate
+.xcuserstate
+
+# Arquivos de Configuração e Chaves (NUNCA SUBIR PARA O GITHUB)
+Config.swift
+Secrets.swift
+APIKeys.swift
+*.xcconfig
