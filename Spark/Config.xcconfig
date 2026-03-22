@@ -1,8 +1,0 @@
-//
-// Config.xcconfig
-// Spark
-//
-// Variáveis de ambiente e chaves sensíveis devem ficar protegidas aqui.
-// NÃO DEVERÁ SER COMITADO NO GIT. (Adicione Config.xcconfig ao seu .gitignore)
-
-GEMINI_API_KEY = AIzaSyCsPJVmQ6PUmHmUed6yVrzZQZ-yDxzVCZI
